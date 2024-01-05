@@ -391,7 +391,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = App;
 
@@ -414,13 +414,13 @@ var _FooterLinks2 = _interopRequireDefault(_FooterLinks);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    return _react2.default.createElement(
-        "main",
-        null,
-        _react2.default.createElement(_HeaderInfo2.default, null),
-        _react2.default.createElement(_main2.default, null),
-        _react2.default.createElement(_FooterLinks2.default, null)
-    );
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(_HeaderInfo2.default, null),
+    _react2.default.createElement(_main2.default, null),
+    _react2.default.createElement(_FooterLinks2.default, null)
+  );
 }
 
 /***/ }),
@@ -477,7 +477,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = FooterLinks;
 
@@ -488,20 +488,20 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function FooterLinks() {
-    return _react2.default.createElement(
-        "footer",
-        { className: "footer" },
-        _react2.default.createElement(
-            "a",
-            { href: "https://www.facebook.com/vladislav.burhovetskiy" },
-            _react2.default.createElement("img", { src: "../image/facebook.png", alt: "Faccbook" })
-        ),
-        _react2.default.createElement(
-            "a",
-            { href: "https://github.com/Vladislav-Burhovetskiy" },
-            _react2.default.createElement("img", { src: "../image/github.png", alt: "GitHub" })
-        )
-    );
+  return _react2.default.createElement(
+    "footer",
+    { className: "footer" },
+    _react2.default.createElement(
+      "a",
+      { href: "https://www.facebook.com/vladislav.burhovetskiy" },
+      _react2.default.createElement("img", { src: "./image/facebook.png", alt: "Faccbook" })
+    ),
+    _react2.default.createElement(
+      "a",
+      { href: "https://github.com/Vladislav-Burhovetskiy" },
+      _react2.default.createElement("img", { src: "./image/github.png", alt: "GitHub" })
+    )
+  );
 }
 
 /***/ }),
@@ -512,7 +512,7 @@ function FooterLinks() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = HeaderInfo;
 
@@ -523,48 +523,51 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function HeaderInfo() {
-    return _react2.default.createElement(
-        "header",
-        { className: "header" },
-        _react2.default.createElement("img", { src: "../image/avatar.png", alt: "Profile photo" }),
+  return _react2.default.createElement(
+    "header",
+    { className: "header" },
+    _react2.default.createElement("img", { src: "./image/avatar.png", alt: "Profile photo" }),
+    _react2.default.createElement(
+      "div",
+      { className: "header-info" },
+      _react2.default.createElement(
+        "h1",
+        null,
+        "Vladislav Burhovetskiy"
+      ),
+      _react2.default.createElement(
+        "h3",
+        null,
+        "Frontend Developer"
+      ),
+      _react2.default.createElement(
+        "a",
+        { href: "https://vladislav-burhovetskiy.github.io/portfolio/" },
         _react2.default.createElement(
-            "div",
-            { className: "header-info" },
-            _react2.default.createElement(
-                "h1",
-                null,
-                "Vladislav Burhovetskiy"
-            ),
-            _react2.default.createElement(
-                "h3",
-                null,
-                "Frontend Developer"
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://vladislav-burhovetskiy.github.io/portfolio/" },
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "portfolio.website"
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "header-btn-container" },
-                _react2.default.createElement(
-                    "a",
-                    { href: "mailto: mylivladislav@gmail.com", className: "header-link" },
-                    "Email"
-                ),
-                _react2.default.createElement(
-                    "a",
-                    { href: "https://www.linkedin.com/in/vladislav-burhovetskiy-4ab264245/", className: "header-link" },
-                    "LinkedIn"
-                )
-            )
+          "p",
+          null,
+          "portfolio.website"
         )
-    );
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "header-btn-container" },
+        _react2.default.createElement(
+          "a",
+          { href: "mailto: mylivladislav@gmail.com", className: "header-link" },
+          "Email"
+        ),
+        _react2.default.createElement(
+          "a",
+          {
+            href: "https://www.linkedin.com/in/vladislav-burhovetskiy-4ab264245/",
+            className: "header-link"
+          },
+          "LinkedIn"
+        )
+      )
+    )
+  );
 }
 
 /***/ }),
@@ -575,7 +578,7 @@ function HeaderInfo() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = Main;
 
@@ -586,30 +589,30 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Main() {
-    return _react2.default.createElement(
-        "div",
-        { className: "main" },
-        _react2.default.createElement(
-            "h2",
-            null,
-            "About"
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            "Enthusiastic and results-driven Front-End Developer with a passion for solving complex problems and creating impactful solutions. Leveraging a strong 10 years background in team collaboration and leadership from diverse roles in volunteer management and social project leadership."
-        ),
-        _react2.default.createElement(
-            "h2",
-            null,
-            "Interests"
-        ),
-        _react2.default.createElement(
-            "p",
-            null,
-            "Playing guitar, writing books, swimming, volunteering"
-        )
-    );
+  return _react2.default.createElement(
+    "main",
+    { className: "main" },
+    _react2.default.createElement(
+      "h2",
+      null,
+      "About"
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      "Enthusiastic and results-driven Front-End Developer with a passion for solving complex problems and creating impactful solutions. Leveraging a strong 10 years background in team collaboration and leadership from diverse roles in volunteer management and social project leadership."
+    ),
+    _react2.default.createElement(
+      "h2",
+      null,
+      "Interests"
+    ),
+    _react2.default.createElement(
+      "p",
+      null,
+      "Playing guitar, writing books, swimming, volunteering"
+    )
+  );
 }
 
 /***/ }),
