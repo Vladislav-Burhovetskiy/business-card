@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderBtn from "./HeaderLinks"
 
 export default function HeaderInfo() {
   return (
@@ -10,17 +11,7 @@ export default function HeaderInfo() {
         <a href="https://vladislav-burhovetskiy.github.io/portfolio/">
           <p>portfolio.website</p>
         </a>
-        <div className="header-btn-container">
-          <a href="mailto: mylivladislav@gmail.com" className="header-link">
-            Email
-          </a>
-          <a
-            href="https://www.linkedin.com/in/vladislav-burhovetskiy-4ab264245/"
-            className="header-link"
-          >
-            LinkedIn
-          </a>
-        </div>
+        <HeaderBtn />
       </div>
     </header>
   );

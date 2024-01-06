@@ -15,8 +15,6 @@ h2 {
     color: #F5F5F5;
 }
 
-/* header */
-
 .header {
     padding-top: 20px;
 }
@@ -83,7 +81,7 @@ p {
 }
 
 .main {
-    padding: 20px 30px;
+    padding: 13px 30px;
     background: #1A1B21;
 }
 
